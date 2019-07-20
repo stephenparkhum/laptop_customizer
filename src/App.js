@@ -46,7 +46,7 @@ class App extends Component {
           <TechSpecs 
             features={this.props.features} 
             selected={this.state.selected}
-            updateFeature={() => {this.updateFeature()}}
+            updateFeature={(feature, newValue)=>this.updateFeature(feature, newValue)}
           />
           <CurrentOrder 
             selected={this.state.selected}
