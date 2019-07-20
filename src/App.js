@@ -26,7 +26,7 @@ class App extends Component {
             cost: 1500
           }
       }
-    }
+    };
   }
 
   updateFeature(feature, newValue) {
@@ -46,7 +46,7 @@ class App extends Component {
           <TechSpecs 
             features={this.props.features} 
             selected={this.state.selected}
-            updateFeature={this.updateFeature}
+            updateFeature={() => {this.updateFeature()}}
           />
           <CurrentOrder 
             selected={this.state.selected}
