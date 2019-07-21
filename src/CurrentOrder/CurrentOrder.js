@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './CurrentOrder.css';
 import SummaryTotal from '../SummaryTotal/SummaryTotal';
 
 class CurrentOrder extends Component {
